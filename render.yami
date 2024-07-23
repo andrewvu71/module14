@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: cms-blog
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DB_NAME
+        value: blog_db
+      - key: DB_USER
+        value: your_postgres_username
+      - key: DB_PW
+        value: your_postgres_password

@@ -4,8 +4,8 @@ const Sequelize = require('sequelize');
 
 module.exports = {
   development: {
-    username: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
+    username: process.env.postgres,
+    password: process.env.jesus,
     database: process.env.DB_NAME,
     host: process.env.DB_HOST,
     dialect: 'postgres',
